@@ -5,7 +5,6 @@ open_canvas()
 grass = load_image('grass.png')
 character = load_image('space.png')
 
-x = 0
 frame = 0
 yPos = 0
 while True:
@@ -18,7 +17,6 @@ while True:
         yPos = yPos + 100
     if yPos >= 500:
         yPos = 0
-    x = x+5
     delay(0.05)
     get_events()
 
